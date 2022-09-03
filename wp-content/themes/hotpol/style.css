@@ -1,0 +1,790 @@
+/*
+Theme Name: HotPol
+Author: Cezary Wielgus
+Author URI: http://cezarywielgus.pl
+Version: BETA 1.0.
+*/
+
+/* all */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p, h5, h4, h3, h2, h1{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #111;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+}
+
+:root {
+--hover: #E32626;
+--gray: #F2F2F2;
+}
+
+/* nav */
+.ul-nav li, .ul-nav-one li{
+    padding: 23px 28px;
+    cursor: pointer;
+}
+
+.ul-nav li:hover{
+    background: var(--hover);
+}
+
+.fixed-nav{
+    background: #999;
+    padding: 20px 0;
+   
+}
+
+.navigation .nav-in{
+    width: 600px; display: flex;  align-items: center; gap: 37px;
+}
+
+.navigation .ul-nav-one{
+    display: flex; width: 860px; justify-content: space-between;
+}
+
+.navigation .social-container{
+    width: 78px; display: flex; justify-content: space-between; margin: 0 10px
+}
+
+.ul-nav-one li p, .ul-nav li p{
+    padding-bottom: 3px; border-bottom: 3px solid transparent; color: #fff; 
+}
+
+.navigation .width{
+    width: 191px;
+}
+
+
+.navigation{
+    position: fixed; z-index: 100; margin-top: 22px; width: 100%;
+}
+
+.navigation .line{
+    height: 37px
+}
+
+.nav-container{
+    display: flex; max-width: 1642px; margin: auto; justify-content: space-between; align-items: center;
+}
+
+.nav-container .double{
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+.nav-container .double p:nth-child(2){
+    font-weight: 600;
+}
+
+#nav-ham{
+    position: absolute; right: 0; top: 0; display: none; cursor: pointer;
+}
+
+/* slider - nasza pomoc drogowa */
+.full-width{
+    max-width: 1920px; min-height: 1080px; display: flex; margin: auto;
+}
+
+.full-width-bg{
+    margin: auto;
+}
+
+.left-up{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.right-down{
+    width: 1228px;
+    margin: auto;
+}
+.text{
+    margin: 0 37px 0 138px 
+}
+.text h1{
+    font-size: 48px; font-weight: 600;
+}
+
+.text h1 b{
+    font-weight: 800;
+}
+
+.text hr{
+    margin: 77px 0; width: 212px; border: 1px solid #000; opacity: .05
+}
+
+.text p{
+    font-size: 18px; height: 89px; overflow: hidden;
+}
+
+.text #rollDown{
+    margin-top: 86px;
+    cursor: pointer;
+}
+
+.height-roll{
+   height: 100px;
+}
+
+.upside-down{
+    transform: rotate(180deg);
+}
+
+
+.overlay-container{
+    position: relative;
+    width: 100%;
+}
+
+.overlay-container .overlay{
+    position: absolute; top: 0; left: 0; background: rgba(0,0,0,.5); width: 100%; height: 100%;
+}
+
+.overlay-container .overlay img{
+    width: 100%; max-height: 1080px
+}
+
+.right-down-absolute{
+    position: absolute; bottom: 0; left: -74px; display: flex
+}
+
+.arrow-left{
+    display: flex; justify-content: center; align-items: center; width: 74px; height: 74px; background: #E3E3E3; opacity: 1; cursor: pointer;
+}
+
+.arrow-right{
+    display: flex; justify-content: center; align-items: center; width: 74px; height: 74px; background: rgba(255,255,255,.7); cursor: pointer;
+}
+
+.customer-delivery{
+    position: absolute; bottom: 219px; left: 194px; background: linear-gradient(187deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%); width: 552px; height: 313px; color: #fff; padding-left: 46px
+}
+
+.car-pictogram{
+    width: 100%; height: 106px; position: relative;
+}
+
+.car-pictogram img:nth-child(1){
+    position: absolute; bottom: 0; left: 0;
+}   
+
+.car-pictogram img:nth-child(2){
+    position: absolute; bottom: 3px; left: 12px;
+}    
+
+.car-pictogram img:nth-child(3){
+    position: absolute; bottom: 0; left: 167px;
+}    
+
+.car-pictogram img:nth-child(4){
+    position: absolute; bottom: 0; left: 185px;
+}    
+
+.car-pictogram img:nth-child(5){
+    position: absolute; bottom: 0; left: 208px;
+}    
+
+.car-pictogram img:nth-child(6){
+    position: absolute; bottom: 0; left: 217px;
+}    
+
+.car-pictogram img:nth-child(7){
+    position: absolute; bottom: 56px; left: 122px;
+}    
+
+.car-pictogram img:nth-child(8){
+    position: absolute; bottom: 18px; left: 126px;
+}    
+
+.car-pictogram img:nth-child(9){
+    position: absolute; bottom: 56px; left: 50px;
+}
+
+.customer-delivery h1{
+    font-size: 48px; padding: 12px 0 8px 0
+}
+
+.customer-delivery h2{
+    font-size: 18px; text-transform: uppercase; padding-bottom: 12px;
+}
+
+.customer-delivery p{
+    font-size: 18px;
+}
+
+.call-for-help{
+    position: absolute; bottom: 0px; left: 746px; background: linear-gradient(58deg, rgba(255,43,43,1) 55%, rgba(128,22,22,1) 100%); width: 368px; height: 219px; margin-left: auto; margin-right: auto; display: flex; flex-direction:column; padding: 0 33px; justify-content: center;
+}
+
+.call-for-help h2{
+    text-transform: uppercase; color: #fff
+}    
+
+.call-for-help .time-to-go{
+    padding: 12px 0 16px 0; color: #fff
+}
+
+.call-phone-container{
+    width: 300px; height: 82px; background: #fff; display: flex; align-items: center; justify-content: center;
+}
+
+.phones{
+    margin-left: 28px;
+}
+
+.call-for-help .phones p{
+    font-size: 25px; font-weight: 500; color: #000;
+}
+
+/* about the company - o naszej firmie */
+.full-width-sd{
+    display: flex; max-width: 1642px; padding: 107px 0; margin: auto;
+}
+
+.overlay-relative{
+    position: relative;
+}
+
+.overlay-relative .overlay{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(128,128,128,0) 100%);
+}
+
+.right-down2{
+    background: #fff; height: 862px; padding-left: 26px; width: 649px; margin: auto;
+}
+
+.left-up2{
+    width: 993px;
+    margin: auto;
+}
+
+.about-the-company{
+    display: flex; width: 649px;
+}  
+
+.about-company-title{
+    padding: 58px 0;
+}
+
+.about-the-company p{
+    padding-bottom: 26px
+}
+
+.about-the-company p.read-more{
+    font-size: 18px; font-weight: 600; text-align: right; text-transform: uppercase; margin-top: 95px;
+}
+
+.horizontal-text-container{
+    width: 100%;
+}
+
+.horizontal-text-container h1{
+    writing-mode: vertical-rl; text-orientation: mixed; font-size: 48px; margin-left: 10px; margin-top: 227px
+}
+
+.horizontal-text-container .arrow-right{
+    background: var(--gray); margin-top: 92px
+}
+
+.bg-overlay{
+position: absolute; top: 0; left: 0; background: #fff;width: 100%; height: 100%; background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.4) 100%);
+}
+
+.full-width-bg{
+background: url("img/Rectangle 14.png"); background-position: center; background-repeat: no-repeat; background-size: cover; min-height: 1080px;
+}
+
+/* galery - galeria zdjęć */
+.z-index{
+position: absolute; top: 0; left: 50%; width: 1642px; z-index: 1; margin-left: auto; margin-right: auto; height: 100%; transform: translateX(-50%); padding: 128px 0
+}
+
+.z-index p{
+width: 574px; padding: 32px 0 72px 0
+}
+
+.margin-auto{
+margin: auto;
+}
+
+.img-grid-container{
+display: grid; grid-template-columns: repeat(auto-fit, minmax(auto, 382px)); grid-gap: 38px; margin-left: auto; margin-right: auto; width: 100%; justify-content: center;
+}
+
+.relative{
+position: relative
+}
+
+.img-overlay{
+position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.47);
+}
+
+.img-overlay-hover{
+position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(229,39,39, .68);
+}
+
+.img-overlay-hover .desc{
+color: #fff; position: absolute; bottom: 22px; left: 110px; display: flex;
+}
+
+.img-overlay-hover .horizont-icon{
+position: absolute; bottom: 29px; right: 37px;
+}
+
+.img-overlay-hover .zoom-icon{
+position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+/* territory - obszar działania */
+.territory .full-width{
+    max-width: 1642px; min-height: 1080px; display: flex; justify-content: center; align-items: center;
+}
+
+.territory .left-up3{
+    max-width: 554px;
+}
+
+.territory .left-up3 h1{
+    margin-bottom: 65px
+}
+
+.territory .left-up3 .t-p{
+    margin-top: 25px
+}
+
+.territory-flex{
+    display: flex; align-items: center; margin-top: 65px;
+}
+
+.territory-flex .read-more{
+    font-size: 18px; text-transform: uppercase; font-weight: 600;
+}
+
+.territory-flex .arrow-right-t{
+    background: #E3E3E3; margin-left: 32px; width: 72px; height: 74px; display: flex; justify-content: center; align-items: center;
+}
+
+.territory .right-down3{
+    max-width: 1088px; margin-left: 184px;
+}
+
+.territory .overlay-map{
+    position: relative;
+}
+
+.territory .overlay-map .rd-h1{
+    position: absolute; bottom: 184px; left: -42px; z-index: 1;
+}
+
+.territory .overlay-map .rd-h1 span{
+    font-weight: 400;
+}
+
+.territory .district{
+    position: absolute;  margin: auto; text-align: center; z-index: 3;
+}
+
+.bialoleka{
+    top: 105px; left: 297px;
+}
+
+.bielany{
+    top: 209px; left: 170px;
+}
+
+.targowek{
+    top: 227px; left: 395px;
+}
+
+.praga-pol{
+    top: 350px; left: 420px;
+}
+
+.mokotow{
+    top: 495px; left: 370px;
+}
+
+.wawer{
+    top: 480px; left: 590px;
+}
+
+.wilanow{
+    top: 600px; left: 480px;
+}
+
+.territory .district .circle{
+    background: rgb(250,0,0);
+    background: linear-gradient(351deg, rgba(250,0,0,1) 0%, rgba(125,0,0,1) 100%); width: 51px; height: 51px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: auto;
+}
+
+.territory .circle img{
+    width: 80%;
+}
+
+.territory .district-title{
+    margin-top: 7px; font-size: 16px;
+}
+
+.territory .right-down3 .overlay-gradient{
+    width: 100%; height: 100%; top: 0; left: 0; background: red; position: absolute;background: rgb(255,255,255);
+    background: linear-gradient(232deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+}
+
+textarea{
+    border: 0;
+    border-bottom: 2px solid #707070;
+    resize: none;
+    font-size: 18px;
+}
+
+textarea:focus{
+    outline: none !important;
+    border-color: var(--hover);
+}
+
+/* contact - napisz do nas */
+.contact{
+    margin: 50px 0;
+}
+
+.contact .max-width-contact{
+    max-width: 1642px; min-height: 433px; display: flex; justify-content: center; align-items: center; margin: auto
+}
+
+.contact .contact-h1{
+    margin-bottom: 92px;
+}
+
+.contact .field{
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(auto, 447px)); max-width: 1120px; column-gap: 210px; row-gap: 55px; margin: auto;
+}
+
+.contact .contact-area .content{
+    width: 1104px; margin-top: 55px
+}
+
+.contact .contact-area .content textarea{
+    width: 100%;
+}
+
+.contact .right-down4{
+    margin-left: 140px; width: 285px; display: flex; align-self: flex-end; justify-content: center; height: 100%;
+}
+
+.contact .right-down4 form{
+}
+
+.contact .right-down4 .checkbox-flex{
+    display: flex; align-items: center;
+}
+
+.contact .right-down4 .checkbox-flex input{
+    width: 20px; height: 20px;
+}
+.contact .right-down4 .checkbox-flex label{
+    margin-left: 10px
+}
+
+.contact .territory-flex{
+    margin-top: 25px
+}
+/* footer */
+footer{
+    background: #F2F2F2; width: 100%; min-height: 404px
+}
+.max-width-footer{
+    max-width: 1642px; margin: auto; display: flex;
+    justify-content: space-between; padding-top: 64px; padding-bottom: 30px
+}
+
+.f-flex{
+    display: flex; margin-bottom: 25px;
+}
+
+.f-flex img{
+    margin-right: 10px;   
+}
+
+.max-width-footer .title{
+    font-size: 18px; margin-bottom: 25px; font-weight: 600;
+}
+
+.max-width-footer .title span{
+    font-weight: 400;
+}
+
+footer .one{
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .two{
+    width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .three{
+    width: 412px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .four{
+    width: 143px; display: flex; height: 22px; justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .four img{
+    cursor: pointer;
+}
+
+.max-width-footer-bottom{
+    width: 100%; margin: auto; display: flex; margin: 34px 0; justify-content: center; gap: 30px
+}
+
+/* hovers all */
+
+.arrow-left:hover{
+    background: var(--hover);
+}
+.arrow-right:hover{
+    background: var(--hover);
+}
+
+.img-overlay-hover{
+    background: rgba(0,0,0,.47);
+    cursor: pointer;
+}
+
+.img-overlay-hover:hover{
+    background: rgba(229,39,39, .68);
+}
+
+.ul-nav li:hover, .ul-nav-one li:hover{
+    background: rgba(229,39,39, .68);
+    cursor: pointer;
+}
+
+.ul-nav li:hover p{
+    border-bottom: 3px solid #fff;
+}
+
+.social-container img{
+    padding: 16px 0 14px 0;
+    cursor: pointer;
+}
+
+.social-container img:hover{
+    cursor: pointer;
+    background: rgba(229,39,39, .68);
+}
+
+
+.ul-nav-one li:hover p{
+    border-bottom: 3px solid #fff;
+}
+
+.img-overlay-hover .horizont-icon{
+    opacity: 0;
+    bottom: 0px;
+}
+
+.img-overlay-hover:hover .horizont-icon{
+    opacity: 1;
+    bottom: 29px;
+}
+
+.img-overlay-hover .desc{
+    opacity: 0;
+    bottom: 0;
+}
+
+.img-overlay-hover:hover .desc{
+    opacity: 1;
+    bottom: 22px;
+}
+
+.img-overlay-hover .zoom-icon{
+    opacity: 0;
+}
+
+.img-overlay-hover:hover .zoom-icon{
+    opacity: 1;
+}
+
+.displayBlock{
+    display: block !important;
+}
+.displayFlex{
+    display: flex !important;
+}
+
+
+/* media-query all */
+@media(max-width: 1650px) {
+    .nav-container{
+        display: block;
+    }
+    .navigation{
+        background: #999;
+        padding: 20px 0
+    }
+    .navigation .ul-nav-one{
+        display: none;
+    }
+    .ul-nav-one li p, .ul-nav li p {
+        text-align: center;
+    }
+
+    .navigation .social-container{
+        margin: auto;
+        display: none;
+    }
+
+    .navigation .ul-nav-one{
+        margin: auto;
+        width: auto;
+    }
+    .navigation .width{
+        width: auto;
+    }
+
+    .ul-nav{
+        margin: auto;
+        display: none;
+    }
+
+    #nav-ham{
+        display: block;
+    }
+
+    .navigation .nav-in{
+        margin-left: 10px;
+    }
+
+
+    .full-width{
+        display: block;
+    }
+    .right-down{
+        width: 500px
+    }
+    .img-call-for-help{
+        width: 500px;
+    }
+
+    .text h1{
+        margin-top: 150px;
+    }
+
+    .customer-delivery{
+        bottom: 80px;
+        left: -60px;
+        background: rgba(0,0,0,.3)
+    }
+
+    #rollDown{
+        padding-bottom: 30px;
+    }
+
+    .upside-down{
+        margin-bottom: 30px;
+    }
+
+    .call-for-help{
+        left: 300px;
+    }
+
+    .full-width-sd {
+        display: block;
+    }
+
+    .z-index{
+        width: 800px;
+    }
+    .z-index h1{
+        text-align: center;
+    }    
+    .z-index p{
+        width: 100%;
+        padding: 30px; 50px;
+        text-align: center;
+    }
+
+    .territory .full-width{
+        display: block;
+    }
+
+    .territory .left-up3 h1{
+        margin-top: 15px;
+    }
+
+    .territory .left-up3{
+        margin: auto;
+    }
+
+    .territory .right-down3{
+        width: 600px;
+        margin: auto;
+    }
+
+    .contact .contact-h1{
+        text-align: center;
+    }
+
+    .contact .max-width-contact{
+        display: block;
+    }
+    .contact .contact-area .content{
+        width: 447px;
+    }
+    .contact .field{
+        width: 447px;
+        margin: auto;
+    }
+    .contact .contact-area .content{
+        margin: auto;
+        margin-top: 50px;
+    }
+    .contact .right-down4{
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .max-width-footer{
+        display: block;
+    }    
+    
+    .one, .two, .three, .four{
+        padding: 20px 0;
+    }
+
+    ..max-width-footer-bottom{
+        display: block;
+    }
+}
